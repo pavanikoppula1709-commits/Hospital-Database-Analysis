@@ -165,7 +165,7 @@ GROUP BY
 HAVING COUNT(a.appointment_id) > 3;
 
 
--- 14. Find doctors whose appointment count is higher than the average doctor appointment count.--
+-- 13. Find doctors whose appointment count is higher than the average doctor appointment count.--
 WITH DoctorAppointments AS
 (
     SELECT
@@ -194,7 +194,7 @@ WHERE appointment_count >
 ORDER BY appointment_count DESC;
 
 
--- 15. Calculate the month-over-month revenue growth rate.--
+-- 14. Calculate the month-over-month revenue growth rate.--
 WITH MonthlyRevenue AS
 (
     SELECT
